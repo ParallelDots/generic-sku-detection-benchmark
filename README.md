@@ -39,12 +39,12 @@ We welcome the community to report results on this benchmark. Please open an iss
 | SKU110K-Test   | RetinaNet [1]                 | 0.455     | -                  | 0.389              | 0.530              | -                                  |
 |                | Full Approach (RetinaNet) [1] | 0.492     | -                  | 0.556              | 0.554              | -                                  |
 |                | Faster-RCNN [1]               | 0.045     | -                  | 0.010              | 0.066              | -                                  |
-|                | Faster-RCNN (ours)            | **0.685** | 0.827              | **0.755**          | **0.756**          | 0.855                              |
-| WebMarket      | Faster-RCNN (ours)            | 0.597     | 0.754              | 0.661              | 0.677              | 0.785                              |
-| TobaccoShelves | Faster-RCNN (ours)            | 0.436     | 0.569              | 0.523              | 0.474              | 0.576                              |
-| Holoselecta    | Faster-RCNN (ours)            | 0.661     | 0.853              | 0.765              | 0.769              | 0.905                              |
-| GP             | Faster-RCNN (ours)            | 0.537     | 0.792              | 0.604              | 0.656              | 0.879                              |
-| CAPG-GP        | Faster-RCNN (ours)            | 0.648     | 0.900              | 0.749              | 0.760              | 0.955                              |
+|                | Faster-RCNN $(ours)$          | **0.685** | 0.827              | **0.755**          | **0.756**          | 0.855                              |
+| WebMarket      | Faster-RCNN $(ours)$          | 0.597     | 0.754              | 0.661              | 0.677              | 0.785                              |
+| TobaccoShelves | Faster-RCNN $(ours)$          | 0.436     | 0.569              | 0.523              | 0.474              | 0.576                              |
+| Holoselecta    | Faster-RCNN $(ours)$          | 0.661     | 0.853              | 0.765              | 0.769              | 0.905                              |
+| GP             | Faster-RCNN $(ours)$          | 0.537     | 0.792              | 0.604              | 0.656              | 0.879                              |
+| CAPG-GP        | Faster-RCNN $(ours)$          | 0.648     | 0.900              | 0.749              | 0.760              | 0.955                              |
 
 
 
