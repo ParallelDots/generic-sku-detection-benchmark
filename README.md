@@ -58,11 +58,10 @@ We welcome the community to report results on this benchmark. Please open an iss
 
 ## Citation
 
-If you found this work useful, please consider citing our paper
+If you found this work useful, please consider citing our paper and the corresponding datasets as well.
 
 > coming soon
 
-Also, do consider citing the corresponding datasets as well
 
 #### SKU110K
 
