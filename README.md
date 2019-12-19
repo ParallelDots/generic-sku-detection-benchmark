@@ -1,13 +1,11 @@
 # Generic Product detection in retail environments.
 
-> **Benchmark for Generic Product Detection: A strong baseline for Dense Object Detection**
-> Srikrishna Varadarajan, Sonaal Kant, Muktabh Mayank Srivastava
+> **Benchmark for Generic Product Detection: A strong baseline for Dense Object Detection**  
+> Srikrishna Varadarajan, Sonaal Kant, Muktabh Mayank Srivastava  
 > [Paper link](coming.soon)
 
 ## Abstract
 Object detection in densely packed scenes is a new area where standard object detectors fail to train well [1].  We show that the performance of the standard object detectors on densely packed scenes is superior when it is trained on normal scenes rather than dense scenes.  We train a standard object detector on a small, normally packed dataset with data augmentation techniques.  This achieves significantly better results than state-of-the-art methods which are trained on densely packed scenes. We also create a varied benchmark for generic SKU product detection by providing full annotations for multiple public datasets. We hope that this benchmark helps in building robust detectors which perform reliably across different settings.
-
-
 
 ## Benchmark Datasets
 
