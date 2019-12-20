@@ -13,6 +13,8 @@ The images of these datasets can be obtained from their original websites (link 
 
 The `WebMarket`, `GP` datasets were annotated entirely by us. The missing generic product annotations of `CAPG-GP` were added by us. The annotations of `Holoselecta`, `TobaccoShelves` were converted from their original formats to suit the standard evaluation code. The authors can let us know if they do not wish to make the annotations available here.
 
+Feel free to reach out if you have any doubts, feedback, thoughts or constructive criticism :)
+
 | Dataset                                                      | Annotations                                               | #Images | #Objects | #Obj/Img |
 | ------------------------------------------------------------ | --------------------------------------------------------- | ------- | -------- | -------- |
 | [SKU110K-Test](https://github.com/eg4000/SKU110K_CVPR19)     | [Their webpage](https://github.com/eg4000/SKU110K_CVPR19) | 2941    | 432,312  | 146      |
@@ -22,13 +24,9 @@ The `WebMarket`, `GP` datasets were annotated entirely by us. The missing generi
 | [GP](https://sites.google.com/view/mariangeorge/datasets)    | This repo                                                 | 680     | 9184     | 13       |
 | [CAPG-GP](http://zju-capg.org/capg-gp.html)                  | This repo                                                 | 234     | 4756     | 20       |
 
-
-
 ## Evaluation code
 
 The evaluation code can be accessed from this [repository](https://github.com/skrish13/SKU110K-evaluation).
-
-
 
 ## Leaderboard
 
@@ -46,13 +44,13 @@ We welcome the community to report results on this benchmark. Please open an iss
 | GP             | Faster-RCNN *ours*          | 0.537     | 0.792              | 0.604              | 0.656              | 0.879                              |
 | CAPG-GP        | Faster-RCNN *ours*          | 0.648     | 0.900              | 0.749              | 0.760              | 0.955                              |
 
+## License
 
+The annotations provided here are strictly for research purposes only and cannot be used for commercial purposes. The licenses of individual datasets can be found in their respective websites. 
 
 ## References
 
 >  [1] Precise Detection in Densely Packed Scenes, CVPR 2019
-
-
 
 ## Citation
 
