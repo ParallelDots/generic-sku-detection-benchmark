@@ -32,17 +32,17 @@ The evaluation code can be accessed from this [repository](https://github.com/sk
 
 We welcome the community to report results on this benchmark. Please open an issue with your output files and a brief description of your method. We provide the predictions of our method in this repository under the folder `predictions`
 
-| Dataset        | Method                        | AP        | AP<sup>$.50$</sup> | AP<sup>$.75$</sup> | AR<sub>$300$</sub> | AR<sup>$.50$</sup><sub>$300$</sub> |
+| Dataset        | Method                        | AP        | AP<sup>.50</sup> | AP<sup>.75</sup> | AR<sub>300</sub> | AR<sup>.50</sup><sub>300</sub> |
 | -------------- | ----------------------------- | --------- | ------------------ | ------------------ | ------------------ | ---------------------------------- |
 | SKU110K-Test   | RetinaNet [1]                 | 0.455     | -                  | 0.389              | 0.530              | -                                  |
 |                | Full Approach (RetinaNet) [1] | 0.492     | -                  | 0.556              | 0.554              | -                                  |
 |                | Faster-RCNN [1]               | 0.045     | -                  | 0.010              | 0.066              | -                                  |
-|                | Faster-RCNN *ours*          | **0.685** | 0.827              | **0.755**          | **0.756**          | 0.855                              |
-| WebMarket      | Faster-RCNN *ours*          | 0.597     | 0.754              | 0.661              | 0.677              | 0.785                              |
-| TobaccoShelves | Faster-RCNN *ours*          | 0.436     | 0.569              | 0.523              | 0.474              | 0.576                              |
-| Holoselecta    | Faster-RCNN *ours*          | 0.661     | 0.853              | 0.765              | 0.769              | 0.905                              |
-| GP             | Faster-RCNN *ours*          | 0.537     | 0.792              | 0.604              | 0.656              | 0.879                              |
-| CAPG-GP        | Faster-RCNN *ours*          | 0.648     | 0.900              | 0.749              | 0.760              | 0.955                              |
+|                | Faster-RCNN *ours*          | 0.186     | 0.560              | 0.052              | 0.264              | 0.647                              |
+| WebMarket      | Faster-RCNN *ours*          | 0.322     | 0.621              | 0.248              | 0.455              | 0.684                              |
+| TobaccoShelves | Faster-RCNN *ours*          | 0.108     | 0.442              | 0.009              | 0.159              | 0.491                              |
+| Holoselecta    | Faster-RCNN *ours*          | 0.239     | 0.707              | 0.072              | 0.347              | 0.816                              |
+| GP             | Faster-RCNN *ours*          | 0.234     | 0.596              | 0.125              | 0.334              | 0.713                              |
+| CAPG-GP        | Faster-RCNN *ours*          | 0.312     | 0.745              | 0.169              | 0.434              | 0.895                              |
 
 ## License
 
@@ -56,8 +56,17 @@ The annotations provided here are strictly for research purposes only and cannot
 
 If you found this work useful, please consider citing our paper and the corresponding datasets as well.
 
-> coming soon
-
+> ```
+> @misc{varadarajan2019benchmark,
+>     title={Benchmark for Generic Product Detection: A strong baseline for Dense Object Detection},
+>     author={Srikrishna Varadarajan and Sonaal Kant and Muktabh Mayank Srivastava},
+>     year={2019},
+>     eprint={1912.09476},
+>     archivePrefix={arXiv},
+>     primaryClass={cs.CV}
+> }
+> ```
+> 
 
 #### SKU110K
 
