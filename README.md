@@ -1,11 +1,21 @@
 # Generic Product detection in retail environments.
 
-> **Benchmark for Generic Product Detection: A strong baseline for Dense Object Detection**  
+> **Benchmark for Generic Product Detection: A Low Data Baseline for Dense Object Detection**  
 > Srikrishna Varadarajan, Sonaal Kant, Muktabh Mayank Srivastava  
 > [Paper link](https://arxiv.org/abs/1912.09476)
 
 ## Abstract
-Object detection in densely packed scenes is a new area where standard object detectors fail to train well [1].  We show that the performance of the standard object detectors on densely packed scenes is superior when it is trained on normal scenes rather than dense scenes.  We train a standard object detector on a small, normally packed dataset with data augmentation techniques.  This achieves significantly better results than state-of-the-art methods which are trained on densely packed scenes. We also create a varied benchmark for generic SKU product detection by providing full annotations for multiple public datasets. We hope that this benchmark helps in building robust detectors which perform reliably across different settings.
+Object detection in densely packed scenes is a new area where standard object detectors fail to train well. Dense object detectors like RetinaNet trained on large and dense datasets show great performance. We train a standard object detector on a small, normally packed dataset with data augmentation techniques. This dataset is 265 times smaller than the standard dataset, in terms of number of annotations. This low data baseline achieves satisfactory results (mAP=0.56) at standard IoU of 0.5. We also create a varied benchmark for generic SKU product detection by providing full annotations for multiple public datasets. We hope that this benchmark helps in building robust detectors that perform reliably across different settings in the wild.
+
+## Approach
+
+| Dataset       | #Images | #Obj/Img | #Anns   |
+|---------------|---------|----------|---------|
+| Our trainset  | 312     | 14.6     | 4556    |
+| SKU110K-train | 8233    | 147.4    | 1,210,431 |
+
+We explore the effectiveness of standard object detectors, trained on very low data. Our training data is 265 times smaller than the standard dataset, in terms of number of annotations. For more details, please checkout the [paper](https://arxiv.org/abs/1912.09476). 
+
 
 ## Benchmark Datasets
 
@@ -36,13 +46,15 @@ We welcome the community to report results on this benchmark. Please open an iss
 | -------------- | ----------------------------- | --------- | ------------------ | ------------------ | ------------------ | ---------------------------------- |
 | SKU110K-Test   | RetinaNet [1]                 | 0.455     | -                  | 0.389              | 0.530              | -                                  |
 |                | Full Approach (RetinaNet) [1] | 0.492     | -                  | 0.556              | 0.554              | -                                  |
+|                | Full Approach* [3]            | 0.514     | 0.853              | 0.569              | 0.571              | 0.872                              |
 |                | Faster-RCNN [1]               | 0.045     | -                  | 0.010              | 0.066              | -                                  |
-|                | Faster-RCNN *ours*          | 0.186     | 0.560              | 0.052              | 0.264              | 0.647                              |
-| WebMarket      | Faster-RCNN *ours*          | 0.322     | 0.621              | 0.248              | 0.455              | 0.684                              |
-| TobaccoShelves | Faster-RCNN *ours*          | 0.108     | 0.442              | 0.009              | 0.159              | 0.491                              |
-| Holoselecta    | Faster-RCNN *ours*          | 0.239     | 0.707              | 0.072              | 0.347              | 0.816                              |
-| GP             | Faster-RCNN *ours*          | 0.234     | 0.596              | 0.125              | 0.334              | 0.713                              |
-| CAPG-GP        | Faster-RCNN *ours*          | 0.312     | 0.745              | 0.169              | 0.434              | 0.895                              |
+|                | *LDB300* [2]                  | 0.186     | 0.560              | 0.052              | 0.264              | 0.647                              |
+|                | ShelfWise v1 [3]              | 0.529     | 0.892              | 0.583              | 0.598              | 0.926                              |
+| WebMarket      | *LDB300* [2]                  | 0.322     | 0.621              | 0.248              | 0.455              | 0.684                              |
+| TobaccoShelves | *LDB300* [2]                  | 0.108     | 0.442              | 0.009              | 0.159              | 0.491                              |
+| Holoselecta    | *LDB300* [2]                  | 0.239     | 0.707              | 0.072              | 0.347              | 0.816                              |
+| GP             | *LDB300* [2]                  | 0.234     | 0.596              | 0.125              | 0.334              | 0.713                              |
+| CAPG-GP        | *LDB300* [2]                  | 0.312     | 0.745              | 0.169              | 0.434              | 0.895                              |
 
 ## License
 
@@ -50,7 +62,10 @@ The annotations provided here are strictly for research purposes only and cannot
 
 ## References
 
->  [1] Precise Detection in Densely Packed Scenes, CVPR 2019
+> [1] Precise Detection in Densely Packed Scenes, CVPR 2019  
+> [2] https://arxiv.org/abs/1912.09476  
+> [3] https://github.com/eg4000/SKU110K_CVPR19/issues/9  
+> [4] https://github.com/ParallelDots/generic-sku-detection-benchmark/issues/3  
 
 ## Citation
 
@@ -58,7 +73,7 @@ If you found this work useful, please consider citing our paper and the correspo
 
 > ```
 > @misc{varadarajan2019benchmark,
->     title={Benchmark for Generic Product Detection: A strong baseline for Dense Object Detection},
+>     title={Benchmark for Generic Product Detection: A Low Data Baseline for Dense Object Detection},
 >     author={Srikrishna Varadarajan and Sonaal Kant and Muktabh Mayank Srivastava},
 >     year={2019},
 >     eprint={1912.09476},
