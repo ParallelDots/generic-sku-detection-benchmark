@@ -62,6 +62,7 @@ The annotations provided here are strictly for research purposes only and cannot
 
 ## References
 
+> More related datasets listed [here](https://github.com/skrish13/datasets-list#grocery-datasets), in case anyone is interested.  
 > [1] Precise Detection in Densely Packed Scenes, CVPR 2019  
 > [2] https://arxiv.org/abs/1912.09476  
 > [3] https://github.com/eg4000/SKU110K_CVPR19/issues/9  
