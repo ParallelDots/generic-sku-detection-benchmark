@@ -49,7 +49,7 @@ We welcome the community to report results on this benchmark. Please open an iss
 |                | Full Approach* [3]            | 0.514     | 0.853              | 0.569              | 0.571              | 0.872                              |
 |                | Faster-RCNN [1]               | 0.045     | -                  | 0.010              | 0.066              | -                                  |
 |                | *LDB300* [2]                  | 0.186     | 0.560              | 0.052              | 0.264              | 0.647                              |
-|                | ShelfWise v1 [4]              | 0.529     | 0.892              | 0.583              | 0.598              | 0.926                              |
+|                | ShelfWise v1 [4]              | 0.544     | 0.904              | 0.606              | 0.614              | 0.934                              |
 | WebMarket      | *LDB300* [2]                  | 0.322     | 0.621              | 0.248              | 0.455              | 0.684                              |
 | TobaccoShelves | *LDB300* [2]                  | 0.108     | 0.442              | 0.009              | 0.159              | 0.491                              |
 | Holoselecta    | *LDB300* [2]                  | 0.239     | 0.707              | 0.072              | 0.347              | 0.816                              |
